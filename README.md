@@ -19,8 +19,8 @@ Then edit the properties file ('src/main/java/io/woolford/resources/application.
 
 Build and run the project:
 
-   mvn clean package
-   nohup java -jar target/sfdc-streaming-1.0-SNAPSHOT.jar &
+    mvn clean package
+    nohup java -jar target/sfdc-streaming-1.0-SNAPSHOT.jar &
 
 That's it! Changes to contacts will be published, in JSON format, to the 'contact-updates' Kafka topic.
 
