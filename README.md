@@ -15,7 +15,7 @@ First, it's necessary to create a topic based on an SOQL query. To do that, twea
     pushTopic.NotifyForFields = 'Referenced';
     insert pushTopic;
 
-Then edit the properties file ('src/main/java/io/woolford/resources/application.properties') - add your own SFDC login, and Kafka broker.
+Then edit the properties file (`src/main/java/io/woolford/resources/application.properties`) - add your own SFDC login, and Kafka broker.
 
 Build and run the project:
 
