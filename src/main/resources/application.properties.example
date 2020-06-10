@@ -1,4 +1,4 @@
 sfdc.username=alex@woolford.io
-sfdc.password=myS3cret
+sfdc.password=password+token
 
-kafka.broker.address=hdp01.woolford.io:6667
+kafka.broker.address=cp01.woolford.io:9092

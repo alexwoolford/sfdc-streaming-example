@@ -17,6 +17,14 @@ First, it's necessary to create a topic based on an SOQL query. To do that, twea
 
 Then edit the properties file (`src/main/java/io/woolford/resources/application.properties`) - add your own SFDC login, and Kafka broker.
 
+The `sfdc.password` property is the concatenation of the password *and* the SFDC security token.
+
+This project depends on the `emp-connector` artifact from `com.salesforce.conduit`. This dependency doesn't exist in Maven Central. You could install it locally:
+
+    git clone https://github.com/forcedotcom/EMP-Connector.git
+    cd EMP-Connector
+    mvn clean install
+
 Build and run the project:
 
     mvn clean package
