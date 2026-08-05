@@ -6,7 +6,7 @@ First, it's necessary to create a topic based on an SOQL query. To do that, twea
 
     PushTopic pushTopic = new PushTopic();
     pushTopic.Name = 'ContactUpdates';
-    pushTopic.Query = 'SELECT id, firstname, lastname, accountid, email FROM contact';
+    pushTopic.Query = 'SELECT id, name, firstname, lastname, accountid, email FROM contact';
     pushTopic.ApiVersion = 39.0;
     pushTopic.NotifyForOperationCreate = true;
     pushTopic.NotifyForOperationUpdate = true;
